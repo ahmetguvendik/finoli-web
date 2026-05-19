@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Destek — Finoli</title>
+<meta name="theme-color" content="#0a0f1e">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 </head>
 <body>
 <nav class="nav">
-  <a href="/" class="brand">
+  <a href="index.html" class="brand">
     <img src="assets/logo.svg" alt="Finoli" width="32" height="32">
     <span>Finoli</span>
   </a>
@@ -17,6 +18,7 @@
     <a href="index.html">Ana Sayfa</a>
     <a href="privacy.html">Gizlilik</a>
     <a href="terms.html">Koşullar</a>
+    <a href="support.html">Destek</a>
   </div>
 </nav>
 
@@ -29,8 +31,8 @@
 <div class="card">
   <h2>📧 E-posta</h2>
   <p>
-    Tüm soru ve önerilerin için:<br>
-    <a href="mailto:support@finoli.app" class="big-link">support@finoli.app</a>
+    Tüm soru, geri bildirim ve önerilerin için:<br>
+    <a href="mailto:ahmetguvendik011348@gmail.com" class="big-link">ahmetguvendik011348@gmail.com</a>
   </p>
   <p class="muted">Genellikle 24 saat içinde yanıt veririz.</p>
 </div>
@@ -40,50 +42,102 @@
 <details>
 <summary>Verilerim güvende mi?</summary>
 <p>
-Evet. Tüm hassas verileriniz (tutarlar, mağaza, açıklama) cihazınızda AES-256 ile
-şifrelenir ve şifreli olarak sunucuya gönderilir. Şifreleme anahtarınız sadece sizin
-cihazınızda saklanır.
+Evet. Tüm hassas verileriniz (tutar, mağaza, açıklama) cihazınızda <strong>AES-256</strong>
+ile şifrelenir ve sunucuya şifreli olarak gönderilir. Şifreleme anahtarınız sadece
+sizin cihazınızda (iOS Keychain / Android Keystore) saklanır. Sunucumuz veri içeriğini
+göremez.
 </p>
 </details>
 
 <details>
 <summary>Hesabımı nasıl silerim?</summary>
-<p>
-İki yöntemle silebilirsiniz:
-</p>
+<p>İki yolla silebilirsiniz:</p>
 <ul>
-  <li>Uygulamadan: Profil → Çıkış Yap → Destek → Hesabımı Sil</li>
-  <li>Web'den: <a href="delete-account.html">Hesap Silme Formu</a></li>
+  <li>
+    <strong>Uygulamadan (önerilen):</strong> Profil → Çıkış Yap altındaki
+    <strong>"Hesabımı Sil"</strong> butonu. İki onaydan sonra anında silinir.
+  </li>
+  <li>
+    <strong>Web'den:</strong> <a href="delete-account.html">Hesap silme sayfası</a>
+  </li>
 </ul>
 </details>
 
 <details>
 <summary>Şifremi unuttum, ne yapmalıyım?</summary>
 <p>
-Giriş ekranında "Şifremi Unuttum" linkine dokunun. E-postanıza sıfırlama linki gelecek.
+Giriş ekranında "Şifremi Unuttum" linkine dokunun. E-posta adresinize bir
+sıfırlama linki gelecek.
+</p>
+</details>
+
+<details>
+<summary>Sesli harcama ekleme nasıl çalışır?</summary>
+<p>
+Ana ekranda mikrofon ikonuna dokunun ve örneğin "Migros'tan 350 lira market"
+deyin. Finoli tutarı, mağazayı ve kategoriyi otomatik tespit eder. Onay
+verdiğinizde harcama eklenir. Tamamen offline çalışır, ses kaydı sunucuya
+gönderilmez.
+</p>
+</details>
+
+<details>
+<summary>Fiş tarama nasıl çalışır?</summary>
+<p>
+Ana ekranda kamera ikonuna dokunun, fişin fotoğrafını çekin veya galeriden
+seçin. Finoli, üzerindeki yazıyı OCR teknolojisi ile okur; tutar, mağaza ve
+tarih otomatik dolar. Görüntü işleme cihazınızda yapılır, fotoğraf sunucuya
+gönderilmez.
 </p>
 </details>
 
 <details>
 <summary>Banka hesabıma bağlanıyor mu?</summary>
 <p>
-Hayır. Finoli banka hesabınıza bağlanmaz, banka şifreleri istemez. Tüm verileri manuel
-veya sesli olarak siz girersiniz (veya fiş tarayarak).
+Hayır. Finoli banka hesabınıza bağlanmaz, banka şifresi istemez. Verileri
+manuel olarak (yazılı, sesli veya fiş tarayarak) siz girersiniz.
 </p>
 </details>
 
 <details>
 <summary>Ücretsiz mi?</summary>
 <p>
-Evet, Finoli temel özellikleri ücretsizdir. Reklam yoktur.
+Evet, Finoli tüm temel özellikleriyle <strong>tamamen ücretsizdir</strong>.
+Reklam yoktur, gizli ödeme yoktur, premium kilidi yoktur.
+</p>
+</details>
+
+<details>
+<summary>Hangi para birimlerini destekliyor?</summary>
+<p>
+Şu an varsayılan para birimi <strong>Türk Lirası (₺)</strong>. Çoklu para
+birimi desteği gelecek sürümlerde planlanıyor.
 </p>
 </details>
 
 <details>
 <summary>Verilerimi dışa aktarabilir miyim?</summary>
 <p>
-CSV/PDF dışa aktarma özelliği yakında eklenecek. Şimdilik özel talep için
-support@finoli.app adresine yazabilirsiniz.
+KVKK ve veri taşınabilirliği hakkınız kapsamında verilerinizin bir kopyasını
+isteyebilirsiniz. Talebinizi
+<a href="mailto:ahmetguvendik011348@gmail.com?subject=Veri%20Aktar%C4%B1m%20Talebi">ahmetguvendik011348@gmail.com</a>
+adresine gönderin, en geç 7 iş günü içinde yanıtlayalım.
+</p>
+</details>
+
+<details>
+<summary>Hangi cihazlarda çalışıyor?</summary>
+<p>
+Finoli <strong>iOS 15.1+</strong> ve <strong>Android 7+ (API 24)</strong> cihazlarda çalışır.
+Tablet desteği vardır.
+</p>
+</details>
+
+<details>
+<summary>Sürüm güncellemeleri nereden gelir?</summary>
+<p>
+App Store (iOS) ve Google Play Store (Android) üzerinden otomatik güncellemeler
+alırsınız. Otomatik güncelleme açıksa uygulama her zaman güncel kalır.
 </p>
 </details>
 

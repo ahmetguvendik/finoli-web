@@ -4,17 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gizlilik Politikası — Finoli</title>
+<meta name="theme-color" content="#0a0f1e">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 </head>
 <body>
 <nav class="nav">
-  <a href="/" class="brand">
+  <a href="index.html" class="brand">
     <img src="assets/logo.svg" alt="Finoli" width="32" height="32">
     <span>Finoli</span>
   </a>
   <div class="nav-links">
     <a href="index.html">Ana Sayfa</a>
+    <a href="privacy.html">Gizlilik</a>
     <a href="terms.html">Koşullar</a>
     <a href="support.html">Destek</a>
   </div>
@@ -22,7 +24,7 @@
 
 <main class="legal container">
 <h1>Gizlilik Politikası</h1>
-<p class="muted">Son güncelleme: 17 Mayıs 2026</p>
+<p class="muted">Son güncelleme: 19 Mayıs 2026</p>
 
 <h2>1. Giriş</h2>
 <p>
@@ -34,7 +36,7 @@ ve verilerinizi nasıl koruduğumuzu açıklar.
 <h2>2. Topladığımız Veriler</h2>
 <h3>2.1 Hesap Bilgileri</h3>
 <ul>
-  <li>E-posta adresi (kayıt için)</li>
+  <li>E-posta adresi (kayıt ve giriş için zorunlu)</li>
   <li>Ad-soyad (profil için, opsiyonel)</li>
   <li>Profil fotoğrafı (Google/Apple ile girişte otomatik, opsiyonel)</li>
 </ul>
@@ -45,16 +47,28 @@ ve verilerinizi nasıl koruduğumuzu açıklar.
   <li>Gelir bilgileri (tutar, açıklama, kaynak, tarih)</li>
   <li>Abonelik ve yinelenen ödeme bilgileri</li>
   <li>Bütçe limitleri</li>
-  <li>Ödeme yöntemleri (kart adı, tip — kart numarası saklanmaz)</li>
+  <li>Ödeme yöntemleri (kart adı, tip — <strong>kart numarası veya banka şifresi asla saklanmaz</strong>)</li>
 </ul>
 
-<h3>2.3 Toplamadığımız Veriler</h3>
+<h3>2.3 Cihaz İzinleri</h3>
 <ul>
-  <li>❌ Banka kartı numarası, CVV veya şifreleri</li>
+  <li><strong>Mikrofon:</strong> Sesli harcama eklemek için, yalnızca kullanıcı izin verdiğinde</li>
+  <li><strong>Kamera:</strong> Fiş tarama için, yalnızca kullanıcı izin verdiğinde</li>
+  <li><strong>Bildirim:</strong> Yinelenen ödeme ve bütçe uyarıları için</li>
+</ul>
+<p class="muted">
+Sesli harcama ve fiş tarama tamamen <strong>cihazınızda</strong> işlenir; ses kaydı veya
+fotoğraf sunucuya gönderilmez.
+</p>
+
+<h3>2.4 Toplamadığımız Veriler</h3>
+<ul>
+  <li>❌ Banka kartı numarası, CVV veya banka şifreleri</li>
   <li>❌ Konum bilgisi</li>
   <li>❌ Rehber, kişiler</li>
-  <li>❌ Reklam takibi için kimlikler</li>
+  <li>❌ Reklam takibi için kimlikler (IDFA / GAID)</li>
   <li>❌ Sosyal medya verileri</li>
+  <li>❌ Tarama veya web kullanım geçmişi</li>
 </ul>
 
 <h2>3. Veri Güvenliği</h2>
@@ -62,15 +76,16 @@ ve verilerinizi nasıl koruduğumuzu açıklar.
 <ul>
   <li>
     <strong>Uçtan Uca AES-256 Şifreleme:</strong> Tüm hassas alanlar (tutar, açıklama,
-    mağaza adı) cihazınızda şifrelenir ve sunucumuza şifreli olarak gönderilir.
-    Şifreleme anahtarınız sadece cihazınızda saklanır (iOS Keychain / Android Keystore).
+    mağaza adı) cihazınızda AES-256 ile şifrelenir ve sunucumuza şifreli olarak gönderilir.
+    Şifreleme anahtarınız yalnızca cihazınızda saklanır (iOS Keychain / Android Keystore).
+    Sunucumuz veri içeriğini okuyamaz.
   </li>
   <li>
     <strong>Row-Level Security (RLS):</strong> Veritabanı seviyesinde her kullanıcı
-    yalnızca kendi verilerine erişebilir.
+    yalnızca kendi verilerine erişebilir; başkalarının verilerini görmek teknik olarak mümkün değildir.
   </li>
   <li>
-    <strong>HTTPS:</strong> Tüm veri aktarımı şifreli kanaldan yapılır.
+    <strong>HTTPS / TLS:</strong> Tüm veri aktarımı şifreli kanaldan yapılır.
   </li>
   <li>
     <strong>OAuth:</strong> Google ve Apple ile giriş seçeneklerinde şifreniz biz tarafından
@@ -86,23 +101,33 @@ ve verilerinizi nasıl koruduğumuzu açıklar.
   <li>Teknik sorunları çözmek ve uygulamayı geliştirmek</li>
   <li>Yasal yükümlülükleri yerine getirmek</li>
 </ul>
-<p>Verileriniz <strong>asla üçüncü taraflarla paylaşılmaz, satılmaz veya reklam amaçlı kullanılmaz</strong>.</p>
+<p>
+Verileriniz <strong>asla üçüncü taraflarla paylaşılmaz, satılmaz veya reklam amaçlı kullanılmaz</strong>.
+</p>
 
 <h2>5. Üçüncü Taraf Servisler</h2>
 <p>Finoli aşağıdaki güvenilir servisleri kullanır:</p>
 <ul>
-  <li><strong>Supabase</strong> — Veritabanı ve kimlik doğrulama (Frankfurt, AB sunucuları)</li>
-  <li><strong>Google Sign-In</strong> — Opsiyonel giriş yöntemi</li>
-  <li><strong>Apple Sign-In</strong> — iOS'ta opsiyonel giriş yöntemi</li>
+  <li><strong>Supabase:</strong> Veritabanı ve kimlik doğrulama (AB sunucularında)</li>
+  <li><strong>Google Sign-In:</strong> Opsiyonel giriş yöntemi (Google Gizlilik Politikası geçerlidir)</li>
+  <li><strong>Apple Sign-In:</strong> iOS'ta opsiyonel giriş yöntemi (Apple Gizlilik Politikası geçerlidir)</li>
+  <li><strong>Google ML Kit:</strong> Fiş tarama (OCR) — tamamen cihaz üzerinde çalışır, görüntü Google'a gönderilmez</li>
 </ul>
 
 <h2>6. Veri Saklama Süresi</h2>
 <p>
 Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı sildiğinizde
-tüm verileriniz 30 gün içinde kalıcı olarak silinir.
+(uygulama içinden veya e-posta ile) tüm verileriniz <strong>en geç 30 gün içinde</strong>
+kalıcı olarak silinir. Uygulama içinden silme işlemi anında yapılır.
 </p>
 
-<h2>7. Haklarınız (KVKK)</h2>
+<h2>7. Çocuklar</h2>
+<p>
+Finoli <strong>13 yaşın altındaki</strong> çocuklara yönelik değildir. 13 yaş altı bir
+kullanıcı tarafından veri toplandığını fark edersek derhal sileriz.
+</p>
+
+<h2>8. Haklarınız (KVKK)</h2>
 <p>6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında haklarınız:</p>
 <ul>
   <li>Verilerinizin işlenip işlenmediğini öğrenme</li>
@@ -111,24 +136,22 @@ tüm verileriniz 30 gün içinde kalıcı olarak silinir.
   <li>Verilerinizin silinmesini isteme (uygulama içinden veya
     <a href="delete-account.html">buradan</a>)</li>
   <li>Aktarım talebinde bulunma</li>
-  <li>Bu haklarınızı kullanmak için <a href="mailto:ahmetguvendik01@gmail.com">support@finoli.app</a>
-    adresine yazabilirsiniz.</li>
 </ul>
-
-<h2>8. Çocuklar</h2>
 <p>
-Finoli 13 yaşın altındaki çocuklara yönelik değildir. 13 yaş altı bir kullanıcı tarafından
-veri toplandığını fark edersek derhal sileriz.
+Bu haklarınızı kullanmak için
+<a href="mailto:ahmetguvendik011348@gmail.com">ahmetguvendik011348@gmail.com</a>
+adresine yazabilirsiniz.
 </p>
 
 <h2>9. Değişiklikler</h2>
 <p>
-Bu politika güncellenebilir. Önemli değişikliklerde uygulama içinden bilgilendirme yaparız.
+Bu politika güncellenebilir. Önemli değişikliklerde uygulama içinden ve bu sayfada
+bilgilendirme yaparız.
 </p>
 
 <h2>10. İletişim</h2>
 <p>
-Sorularınız için: <a href="mailto:ahmetguvendik01@gmail.com">support@finoli.app</a>
+Sorularınız için: <a href="mailto:ahmetguvendik011348@gmail.com">ahmetguvendik011348@gmail.com</a>
 </p>
 </main>
 

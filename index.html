@@ -3,18 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Finoli — Akıllı Finansal Asistan</title>
-<meta name="description" content="Harcamanı yönet, geleceğini planla. AES-256 şifreleme ile güvenli, ücretsiz kişisel finans uygulaması.">
+<title>Finoli — Akıllı Kişisel Finans Asistanı</title>
+<meta name="description" content="Harcamanı yönet, bütçeni gör. Sesli ekleme, fiş tarama, AES-256 uçtan uca şifreleme. Reklamsız ve ücretsiz kişisel finans uygulaması.">
+<meta name="theme-color" content="#0a0f1e">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 </head>
 <body>
 <nav class="nav">
-  <a href="/" class="brand">
+  <a href="index.html" class="brand">
     <img src="assets/logo.svg" alt="Finoli" width="32" height="32">
     <span>Finoli</span>
   </a>
   <div class="nav-links">
+    <a href="index.html">Ana Sayfa</a>
     <a href="privacy.html">Gizlilik</a>
     <a href="terms.html">Koşullar</a>
     <a href="support.html">Destek</a>
@@ -24,10 +26,10 @@
 <header class="hero">
   <div class="container">
     <img src="assets/logo.svg" alt="Finoli" class="hero-logo" width="120" height="120">
-    <h1>Harcamanı yönet,<br>geleceğini planla</h1>
+    <h1>Harcamanı yönet,<br>bütçeni gör</h1>
     <p class="lead">
-      Akıllı finansal asistan. Sesli harcama ekle, fiş tara, yinelenen ödemeleri takip et.
-      Tüm verilerin AES-256 ile şifreli, sadece sen okuyabilirsin.
+      Sesli harcama ekle, fişini tara, yinelenen ödemelerini ve aboneliklerini takip et.
+      Tüm verilerin cihazında AES-256 ile şifrelenir — reklamsız ve ücretsiz.
     </p>
     <div class="cta-row">
       <a href="#features" class="btn btn-primary">Özellikleri Gör</a>
@@ -41,34 +43,64 @@
     <h2>Özellikler</h2>
     <div class="grid">
       <div class="feature">
-        <div class="emoji">🎤</div>
+        <div class="emoji">🎙️</div>
         <h3>Sesli Harcama</h3>
-        <p>"Migros'tan 350 lira market" de, Finoli anında ekler.</p>
+        <p>"Migros'tan 350 lira market" de, Finoli anında ekler, kategorisini de kendisi seçer.</p>
       </div>
       <div class="feature">
         <div class="emoji">📷</div>
-        <h3>Fiş Tarama</h3>
-        <p>Fişi çek, tutar ve mağaza otomatik dolar.</p>
+        <h3>Fiş Tarama (OCR)</h3>
+        <p>Fişini telefonla çek; tutar, mağaza ve tarih otomatik okunsun.</p>
+      </div>
+      <div class="feature">
+        <div class="emoji">💰</div>
+        <h3>Gelir &amp; Gider</h3>
+        <p>Maaş, ek gelir, harcama ve sabit gider — hepsi tek yerde, kategorili.</p>
       </div>
       <div class="feature">
         <div class="emoji">🔁</div>
         <h3>Yinelenen Ödemeler</h3>
-        <p>Maaş, kira, abonelikler otomatik hatırlatma ile.</p>
+        <p>Kira, fatura, kredi taksiti — bir kez gir, hatırlatmayı Finoli yapsın.</p>
+      </div>
+      <div class="feature">
+        <div class="emoji">📺</div>
+        <h3>Abonelik Yönetimi</h3>
+        <p>Netflix, Spotify, Storage… Aylık ne kadar ödüyorsun, ne zaman yenileniyor — hepsi belli.</p>
+      </div>
+      <div class="feature">
+        <div class="emoji">🎯</div>
+        <h3>Bütçe Hedefleri</h3>
+        <p>Kategoriye göre aylık limit koy. Yaklaştığında uyarılır, aşarsan kırmızı görünür.</p>
       </div>
       <div class="feature">
         <div class="emoji">📊</div>
-        <h3>Akıllı İstatistikler</h3>
-        <p>Aylık trend, kategori dağılımı, ödeme yöntemi analizi.</p>
+        <h3>Detaylı İstatistikler</h3>
+        <p>6 aylık trend grafiği, kategori dağılımı, net durum — bilinçli kararlar al.</p>
+      </div>
+      <div class="feature">
+        <div class="emoji">💳</div>
+        <h3>Ödeme Yöntemleri</h3>
+        <p>Kart, nakit, banka hesabı — her birinin harcamasını ayrı izle.</p>
       </div>
       <div class="feature">
         <div class="emoji">🔐</div>
-        <h3>Uçtan Uca Şifreleme</h3>
-        <p>AES-256 ile tüm verilerin şifreli. Sadece sen erişebilirsin.</p>
+        <h3>AES-256 Şifreleme</h3>
+        <p>Tutar, mağaza, açıklama bilgilerin cihazında şifrelenir. Anahtar sadece sende.</p>
       </div>
       <div class="feature">
         <div class="emoji">🔔</div>
         <h3>Akıllı Bildirimler</h3>
-        <p>Vade hatırlatmaları + günlük harcama hatırlatması.</p>
+        <p>Yaklaşan ödemeler, aşılan bütçeler, abonelik yenilemeleri — hiçbir şey kaçmasın.</p>
+      </div>
+      <div class="feature">
+        <div class="emoji">🚫</div>
+        <h3>Reklam Yok, Veri Satışı Yok</h3>
+        <p>Hiçbir reklam göstermez, verilerini üçüncü taraflarla paylaşmaz. Ücretsiz.</p>
+      </div>
+      <div class="feature">
+        <div class="emoji">🇹🇷</div>
+        <h3>Türkiye'de Geliştirildi</h3>
+        <p>Türkçe arayüz, Türk Lirası, KVKK uyumlu. Yerli ve milli.</p>
       </div>
     </div>
   </div>
